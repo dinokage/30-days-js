@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Drum Kit</title>
-</head>
-<body>
-    <h1>
-        Dumb Drummer
-    </h1>
+  </head>
+  <body>
+    <h1>Dumb Drummer</h1>
     <main>
-        <div id="drumkit"></div>
+      <div id="drumkit">
+        <span class="sound" onClick="playAudio('snare')">snare</span>
+        <span class="sound" onClick="playAudio('kick')">kick</span>
+        <span class="sound" onClick="playAudio('hihat')">hihat</span>
+        <span class="sound" onClick="playAudio('openhat')">openhat</span>
+        <span class="sound" onClick="playAudio('ride')">ride</span>
+        <span class="sound" onClick="playAudio('tom')">tom</span>
+        <span class="sound" onClick="playAudio('clap')">clap</span>
+        <span class="sound" onClick="playAudio('tink')">tink</span>
+        <span class="sound" onClick="playAudio('boom')">boom</span>
+      </div>
     </main>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
